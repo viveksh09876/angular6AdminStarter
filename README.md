@@ -1,4 +1,4 @@
-# NewsAppAdmin
+# Angular 6 Admin Panel Starter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
 
