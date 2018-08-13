@@ -32,13 +32,16 @@ export class LoginComponent implements OnInit {
     
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/users';
   }
+
   getErrorEmailMessage() {
     return this.email.hasError('required') ? 'Email is required' :
         this.email.hasError('email') ? 'Not a valid email' :'';
   }
-   getErrorPasswordMessage() {
+
+  getErrorPasswordMessage() {
     return this.email.hasError('required') ? 'Password is required' :'';
   }
+  
   login(){
     if(this.email.valid && this.password.valid){
       this.authenticationService.login(this.email.value, this.password.value)
